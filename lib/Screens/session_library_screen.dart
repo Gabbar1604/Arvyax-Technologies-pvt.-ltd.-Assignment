@@ -370,7 +370,7 @@ class _SessionLibraryScreenState extends State<SessionLibraryScreen> {
                             ),
                             const SizedBox(width: 4),
                             Text(
-                              session.formattedDuration,
+                              _formatDuration(session.duration),
                               style: TextStyle(
                                 color: Colors.grey[600],
                                 fontSize: 12,
@@ -428,5 +428,11 @@ class _SessionLibraryScreenState extends State<SessionLibraryScreen> {
         ),
       ),
     );
+  }
+
+  String _formatDuration(int seconds) {
+    final minutes = seconds ~/ 60;
+    final remainingSeconds = seconds % 60;
+    return '${minutes}m ${remainingSeconds}s';
   }
 }
