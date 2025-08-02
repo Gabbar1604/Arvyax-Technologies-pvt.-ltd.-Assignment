@@ -1,0 +1,24 @@
+{
+  "catalog": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-01",
+    "sessions": [
+      {
+        "id": "cat_cow_flow",
+        "title": "Cat-Cow Flow",
+        "category": "spinal_mobility",
+        "difficulty": "beginner",
+        "duration": 61,
+        "description": "Gentle spinal mobility sequence",
+        "thumbnail": "assets/images/cat_cow_thumb.png",
+        "jsonFile": "CatCowJson.json",
+        "tags": ["flexibility", "warm-up", "spine"],
+        "instructor": "AI Yoga Guide",
+        "isActive": true
+      }
+    
+    ]
+
+    
+  }
+}
